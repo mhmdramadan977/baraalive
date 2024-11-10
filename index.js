@@ -16,6 +16,7 @@ const io = socketIo(server, {
     allowedHeaders: ['Content-Type'],
     credentials: true,
   },
+    transports: ['websocket', 'polling'],
 });
 
 // Enable CORS for the frontend
